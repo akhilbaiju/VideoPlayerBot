@@ -6,7 +6,7 @@ from config import Config
 from logger import LOGGER
 import os
 
-HOME_TEXT = "<b><i>Hey  [{}](tg://user?id={}) I am A Bot Built To Play or Stream Videos In Telegram VoiceChats.\nI Can Stream Any YouTube Video Or A Telegram File Or Even A YouTube Live.<i></b>"
+HOME_TEXT = "<b><i>Hey  [{}](tg://user?id={}) I am A Bot Built To Play or Stream Videos In Telegram VoiceChats.\nI Can Stream Any YouTube Video Or A Telegram File Or Even A YouTube Live.</i></b>"
 admin_filter=filters.create(is_admin) 
 
 @Client.on_message(filters.command(['start', f"start@{Config.BOT_USERNAME}"]))
