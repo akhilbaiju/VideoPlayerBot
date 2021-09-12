@@ -26,7 +26,7 @@ async def reply(client, message):
         Config.msg[message.chat.id]={"msg":m.updates[1].message.id, "s":message.message_id}
     except BotInlineDisabled:
         LOGGER.error(f"Error: Inline Mode for @{Config.BOT_USERNAME} is not enabled. Enable from @Botfather to enable PM Permit.")
-        await message.reply(f"{Config.REPLY_MESSAGE}\n\n<b>അയിന് നീ ഏതാ ? \n யார் நீ ? \n आप कौन हैं? \n Who are you ?</b>", disable_web_page_preview=True)
+        await message.reply(f"{Config.REPLY_MESSAGE}\n\nഅയിന് നീ ഏതാ ?  யார் நீ ?  आप कौन हैं?  Who are you ?", disable_web_page_preview=True)
     except Exception as e:
         LOGGER.error(e)
         pass
