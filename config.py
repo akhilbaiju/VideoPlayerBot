@@ -74,7 +74,7 @@ class Config:
     PAUSE=False
     STREAM_LINK=False
     HELP="""
-<b>How Can I Play Video?</b>
+<b>How Can I Play Video? Dev Testing...</b>
 
 You have file options.
  1. Play a video from a YouTube link.
@@ -117,7 +117,7 @@ These are commands to control player.
     <i>To export current playlist for future use.</i>
 
 <b>Other Commands</b>
- 1. Update and restert the bot.
+ 1. Update and restart the bot.
     Command: <b>/update</b> or <b>/restart</b>
  2. Get Logs
     Command: <b>/logs</b>
