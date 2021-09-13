@@ -181,9 +181,9 @@ async def get_raw_files(link):
         try:
             process.send_signal(SIGINT)
         except subprocess.TimeoutExpired:
-            process.kill()
+            process.terminate()
         except Exception as e:
-            LOGGER.error(f"Error while converting to raw files {e}")
+            LOGGER.error(f"Error while terminating ffmpeg {e}")
             pass
         del Config.FFMPEG_PROCESSES[Config.CHAT]
     Config.GET_FILE["old"] = os.listdir("./downloads")
